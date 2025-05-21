@@ -50,6 +50,7 @@
               <v-divider thickness="5"></v-divider>
             </v-list-item>
           </template>
+
           <v-row v-else>
             <v-col cols="12">
               <v-card>
@@ -83,4 +84,14 @@
   const deleteTask = (index) => {
     tasks.value.splice(index, 1);
   };
+
+  const completedTasks = computed(() => {
+    return tasks.value.filter((task) => task.completed);
+  });
 </script>
+
+<style scoped>
+  .text-decoration-line-through {
+    text-decoration: line-through;
+  }
+</style>
