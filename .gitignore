@@ -2,3 +2,7 @@
 node_modules/
 .env
 .vscode/
+<<<<<<< HEAD
+=======
+typed-router.d.ts
+>>>>>>> e671ef5 (update gitignore)

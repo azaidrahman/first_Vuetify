@@ -38,6 +38,7 @@ declare module 'vue-router/auto-routes' {
     '/lecture/day4-v-model': RouteRecordInfo<'/lecture/day4-v-model', '/lecture/day4-v-model', Record<never, never>, Record<never, never>>,
     '/lecture/day5': RouteRecordInfo<'/lecture/day5', '/lecture/day5', Record<never, never>, Record<never, never>>,
     '/lecture/day5_v-model': RouteRecordInfo<'/lecture/day5_v-model', '/lecture/day5_v-model', Record<never, never>, Record<never, never>>,
+    '/lecture/day6_scopedSlots': RouteRecordInfo<'/lecture/day6_scopedSlots', '/lecture/day6_scopedSlots', Record<never, never>, Record<never, never>>,
     '/lecture/day6-slots': RouteRecordInfo<'/lecture/day6-slots', '/lecture/day6-slots', Record<never, never>, Record<never, never>>,
     '/lecture/hands_on2': RouteRecordInfo<'/lecture/hands_on2', '/lecture/hands_on2', Record<never, never>, Record<never, never>>,
     '/lecture/hands-on': RouteRecordInfo<'/lecture/hands-on', '/lecture/hands-on', Record<never, never>, Record<never, never>>,
