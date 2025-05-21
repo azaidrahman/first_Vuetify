@@ -19,47 +19,47 @@
         </v-form>
       </v-col>
     </v-row>
+
     <!-- <v-row v-if="tasks.length > 0"> -->
     <v-row>
       <v-col cols="12">
         <v-list lines="two">
-          <v-list-subheader
-            class="text-bold"
-            style="font-size: 1.2rem">
-            Todo List
-          </v-list-subheader>
-          <template>
+          <template v-if="tasks.length > 0">
             <v-list-item
               v-for="(task, index) in tasks"
               :key="index">
-              <v-checkbox
-                v-model="task.completed"
-                color="primary" />
-              <v-list-item-content>
-                <v-list-item-title
-                  :class="{
-                    'text-decoration-line-through':
-                      task.completed,
-                  }">
-                  {{ task.text }}
-                </v-list-item-title>
-              </v-list-item-content>
-              <v-btn @click="deleteTask(index)" color="red">
-                <v-icon icon="mdi-delete"></v-icon>
-              </v-btn>
+              <v-row align="center" justify="space-between">
+                <v-checkbox
+                  v-model="task.completed"
+                  color="primary" />
+                <v-list-item-content>
+                  <v-list-item-title
+                    :class="{
+                      'text-decoration-line-through':
+                        task.completed,
+                    }">
+                    {{ task.text }}
+                  </v-list-item-title>
+                </v-list-item-content>
+                <v-btn
+                  @click="deleteTask(index)"
+                  color="red">
+                  <v-icon icon="mdi-delete"></v-icon>
+                </v-btn>
+              </v-row>
+              <v-divider thickness="5"></v-divider>
             </v-list-item>
           </template>
+          <v-row v-else>
+            <v-col cols="12">
+              <v-card>
+                <v-card-text>
+                  No tasks yet. Add one above!
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
         </v-list>
-      </v-col>
-    </v-row>
-    <!-- <v-row v-else> -->
-    <v-row>
-      <v-col cols="12">
-        <v-card>
-          <v-card-text>
-            No tasks yet. Add one above!
-          </v-card-text>
-        </v-card>
       </v-col>
     </v-row>
   </v-container>
