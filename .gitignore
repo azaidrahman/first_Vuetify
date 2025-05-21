@@ -4,6 +4,7 @@ node_modules/
 .vscode/
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 typed-router.d.ts
 >>>>>>> e671ef5 (update gitignore)
@@ -11,8 +12,16 @@ typed-router.d.ts
 typed-router.d.ts
 auto-imports.d.ts
 components.d.ts
+=======
+src/typed-router.d.ts
+src/auto-imports.d.ts
+src/components.d.ts
+>>>>>>> 0d93555 (update gitignore 3)
 .eslintrc-auto-import.json
 .json
 env.d.ts
 vite.config.mts
+<<<<<<< HEAD
 >>>>>>> 5e23ba3 (update gitignore 2)
+=======
+>>>>>>> 0d93555 (update gitignore 3)
