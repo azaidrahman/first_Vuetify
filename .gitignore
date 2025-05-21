@@ -5,6 +5,7 @@ node_modules/
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 typed-router.d.ts
 >>>>>>> e671ef5 (update gitignore)
@@ -14,6 +15,8 @@ auto-imports.d.ts
 components.d.ts
 =======
 src/typed-router.d.ts
+=======
+>>>>>>> 3dbe02b (git ignore again)
 src/auto-imports.d.ts
 src/components.d.ts
 >>>>>>> 0d93555 (update gitignore 3)
