@@ -9,6 +9,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
+    BookList: typeof import('./components/BookList.vue')['default']
     Card: typeof import('./components/Card.vue')['default']
     CustomInput: typeof import('./components/CustomInput.vue')['default']
     CustomList: typeof import('./components/CustomList.vue')['default']
